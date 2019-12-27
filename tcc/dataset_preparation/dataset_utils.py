@@ -82,10 +82,10 @@ def get_example(name, seq, seq_label=None, label_string=None,
 
   if seq_label is not None:
     logging.info('Label for %s: %s', name, str(seq_label))
-    context_features_dict['label'] = int64_feature([seq_label])
+    context_features_dict['label'] = int64_feature([seq_label.encode('utf-8')])
 
   if label_string:
-    context_features_dict['label_string'] = bytes_feature([label_string])
+    context_features_dict['label_string'] = bytes_feature([label_string.encode('utf-8')])
 
   if frame_labels_string:
     # Store as a single string as all context features should be Features or
