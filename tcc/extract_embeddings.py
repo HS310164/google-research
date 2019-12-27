@@ -37,12 +37,12 @@ gfile = tf.io.gfile
 layers = tf.keras.layers
 
 flags.DEFINE_boolean('defun', True, 'Defun everything!')
-flags.DEFINE_string('save_path', '/tmp/embeddings.npy',
+flags.DEFINE_string('save_path', 'tmp/embeddings.npy',
                     'where to store embeddings')
 flags.DEFINE_string('dataset', None, 'dataset')
 flags.DEFINE_string('split', None, 'split')
 flags.DEFINE_string('logdir', None, 'Log dir for checkpoint.')
-flags.DEFINE_string('path_to_tfrecords', '/tmp/%s_tfrecords', 'Path to '
+flags.DEFINE_string('path_to_tfrecords', 'tmp/%s_tfrecords', 'Path to '
                     'TFRecords.')
 flags.DEFINE_integer('frames_per_batch', 30, 'frames_per_batch')
 flags.DEFINE_boolean('visualize', False, 'Visualize images. Switched off by '

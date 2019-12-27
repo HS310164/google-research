@@ -32,7 +32,7 @@ flags.DEFINE_string('file_pattern', '*.mp4', 'Pattern used to searh for files'
 flags.DEFINE_string('label_file', None, 'Provide a corresponding labels file'
                     'that stores per-frame or per-sequence labels. This info'
                     'will get stored.')
-flags.DEFINE_string('output_dir', '/tmp/tfrecords/', 'Output directory where'
+flags.DEFINE_string('output_dir', 'tmp/tfrecords/', 'Output directory where'
                     'tfrecords will be stored.')
 flags.DEFINE_integer('files_per_shard', 1, 'Number of videos to store in a'
                      'shard.')

@@ -45,7 +45,7 @@ flags.DEFINE_string('extension', 'jpg', 'Extension of images.')
 flags.DEFINE_string(
     'label_file', None, 'Provide a corresponding labels file'
     'that stores per-frame or per-sequence labels.')
-flags.DEFINE_string('output_dir', '/tmp/tfrecords/', 'Output directory where'
+flags.DEFINE_string('output_dir', 'tmp/tfrecords/', 'Output directory where'
                     'tfrecords will be stored.')
 flags.DEFINE_integer('vids_per_shard', 1, 'Number of videos to store in a'
                      'shard.')

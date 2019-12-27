@@ -42,7 +42,7 @@ layers = tf.keras.layers
 
 
 flags.DEFINE_boolean('continuous_eval', True, 'Evaluate continously.')
-flags.DEFINE_string('logdir', '/tmp/alignment_logs', 'Path to logs.')
+flags.DEFINE_string('logdir', 'tmp/alignment_logs', 'Path to logs.')
 flags.DEFINE_boolean('defun', True, 'Defun everything!')
 flags.DEFINE_boolean('visualize', False, 'Visualize images. Switched off by '
                      'for default to speed traininig up and take less memory.')

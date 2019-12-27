@@ -63,7 +63,7 @@ EVAL:
   - few_shot_classification
   VAL_ITERS: 10
 IMAGE_SIZE: 112
-LOGDIR: /tmp/alignment_logs
+LOGDIR: tmp/alignment_logs
 LOGGING:
   REPORT_INTERVAL: 100
 MODEL:
@@ -105,7 +105,7 @@ MODEL:
     USE_BN: true
   EMBEDDER_TYPE: conv
   L2_REG_WEIGHT: 1.0e-05
-  RESNET_PRETRAINED_WEIGHTS: /tmp/resnet50v2_weights_tf_dim_ordering_tf_kernels_notop.h5
+  RESNET_PRETRAINED_WEIGHTS: tmp/resnet50v2_weights_tf_dim_ordering_tf_kernels_notop.h5
   TRAIN_BASE: only_bn
   TRAIN_EMBEDDING: true
   VGGM:
@@ -122,7 +122,7 @@ OPTIMIZER:
     - 10000
     NUM_WARMUP_STEPS: 0
   TYPE: AdamOptimizer
-PATH_TO_TFRECORDS: /tmp/%s_tfrecords/
+PATH_TO_TFRECORDS: tmp/%s_tfrecords/
 SAL:
   DROPOUT_RATE: 0.0
   FC_LAYERS:
