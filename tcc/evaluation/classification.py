@@ -30,9 +30,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 import tensorflow.compat.v2 as tf
 
-from tcc.config import CONFIG
-from tcc.evaluation.task import Task
-from tcc.utils import gen_plot
+from config import CONFIG
+from evaluation.task import Task
+from utils import gen_plot
 
 FLAGS = flags.FLAGS
 

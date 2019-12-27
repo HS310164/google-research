@@ -22,9 +22,9 @@ from __future__ import print_function
 
 from absl import flags
 
-from tcc.algos.algorithm import Algorithm
-from tcc.config import CONFIG
-from tcc.tcc.alignment import compute_alignment_loss
+from algos.algorithm import Algorithm
+from config import CONFIG
+from tccl.alignment import compute_alignment_loss
 
 FLAGS = flags.FLAGS
 

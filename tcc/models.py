@@ -28,7 +28,7 @@ import tensorflow.compat.v2 as tf
 from tensorflow.keras import regularizers
 from tensorflow.keras.models import Model
 
-from tcc.config import CONFIG
+from config import CONFIG
 
 FLAGS = flags.FLAGS
 layers = tf.keras.layers

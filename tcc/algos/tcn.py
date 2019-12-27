@@ -21,10 +21,10 @@ from __future__ import print_function
 
 import tensorflow.compat.v2 as tf
 
-from tcc.algos.algorithm import Algorithm
-from tcc.config import CONFIG
-from tcc.utils import get_cnn_feats
-from tcc.utils import set_learning_phase
+from algos.algorithm import Algorithm
+from config import CONFIG
+from utils import get_cnn_feats
+from utils import set_learning_phase
 
 
 def _npairs_loss(labels, embeddings_anchor, embeddings_positive, reg_lambda):
@@ -104,7 +104,7 @@ class TCN(Algorithm):
       num_steps = CONFIG.EVAL.NUM_FRAMES
       batch_size = CONFIG.EVAL.BATCH_SIZE
     losses = []
-    for i in xrange(batch_size):
+    for i in range(batch_size):
       losses.append(single_sequence_loss(embs[i], num_steps))
     loss = tf.reduce_mean(tf.stack(losses))
     return loss

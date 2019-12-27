@@ -15,11 +15,11 @@
 
 """List all available tasks."""
 
-from tcc.evaluation.algo_loss import AlgoLoss
-from tcc.evaluation.classification import Classification
-from tcc.evaluation.event_completion import EventCompletion
-from tcc.evaluation.few_shot_classification import FewShotClassification
-from tcc.evaluation.kendalls_tau import KendallsTau
+from evaluation.algo_loss import AlgoLoss
+from evaluation.classification import Classification
+from evaluation.event_completion import EventCompletion
+from evaluation.few_shot_classification import FewShotClassification
+from evaluation.kendalls_tau import KendallsTau
 
 TASK_NAME_TO_TASK_CLASS = {
     'algo_loss': AlgoLoss,

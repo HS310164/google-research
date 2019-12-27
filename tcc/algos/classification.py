@@ -21,10 +21,10 @@ from __future__ import print_function
 
 import tensorflow.compat.v2 as tf
 
-from tcc.algos.algorithm import Algorithm
-from tcc.config import CONFIG
-from tcc.dataset_splits import DATASET_TO_NUM_CLASSES
-from tcc.models import Classifier
+from algos.algorithm import Algorithm
+from config import CONFIG
+from dataset_splits import DATASET_TO_NUM_CLASSES
+from models import Classifier
 
 
 class Classification(Algorithm):

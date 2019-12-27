@@ -29,11 +29,11 @@ import numpy as np
 import sklearn
 
 import tensorflow.compat.v2 as tf
-from tcc.config import CONFIG
-from tcc.dataset_splits import DATASET_TO_NUM_CLASSES
-from tcc.evaluation.task import Task
-from tcc.evaluation.task_utils import get_targets_from_labels
-from tcc.evaluation.task_utils import unnormalize
+from config import CONFIG
+from dataset_splits import DATASET_TO_NUM_CLASSES
+from evaluation.task import Task
+from evaluation.task_utils import get_targets_from_labels
+from evaluation.task_utils import unnormalize
 
 FLAGS = flags.FLAGS
 layers = tf.keras.layers

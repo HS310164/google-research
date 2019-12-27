@@ -30,9 +30,9 @@ from absl import logging
 
 import scipy.io as sio
 
-from tcc.dataset_preparation.dataset_utils import label_timestamps
-from tcc.dataset_preparation.dataset_utils import merge_annotations
-from tcc.dataset_preparation.dataset_utils import write_seqs_to_tfrecords
+from dataset_preparation.dataset_utils import label_timestamps
+from dataset_preparation.dataset_utils import merge_annotations
+from dataset_preparation.dataset_utils import write_seqs_to_tfrecords
 
 import cv2
 
@@ -115,7 +115,7 @@ def get_name(filename, videos_dir, penn_action=False):
 
 def get_timestamps(frames, fps, offset=0.0):
   """Returns timestamps for frames in a video."""
-  return [offset + x/float(fps) for x in xrange(len(frames))]
+  return [offset + x/float(fps) for x in range(len(frames))]
 
 
 def create_tfrecords(name, output_dir, videos_dir, vid_list, label_file,

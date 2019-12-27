@@ -25,10 +25,10 @@ from absl import flags
 
 import tensorflow.compat.v2 as tf
 
-from tcc.config import CONFIG
-from tcc.models import get_model
-from tcc.utils import get_cnn_feats
-from tcc.utils import set_learning_phase
+from config import CONFIG
+from models import get_model
+from utils import get_cnn_feats
+from utils import set_learning_phase
 
 FLAGS = flags.FLAGS
 

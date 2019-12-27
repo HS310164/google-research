@@ -42,8 +42,8 @@ from __future__ import print_function
 
 import tensorflow.compat.v2 as tf
 
-from tcc.tcc.deterministic_alignment import compute_deterministic_alignment_loss
-from tcc.tcc.stochastic_alignment import compute_stochastic_alignment_loss
+from tcc.deterministic_alignment import compute_deterministic_alignment_loss
+from tcc.stochastic_alignment import compute_stochastic_alignment_loss
 
 
 def compute_alignment_loss(embs,

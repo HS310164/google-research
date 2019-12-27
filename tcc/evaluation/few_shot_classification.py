@@ -29,9 +29,9 @@ import numpy as np
 import scipy.stats as st
 import tensorflow.compat.v2 as tf
 
-from tcc.config import CONFIG
-from tcc.evaluation.classification import fit_linear_models
-from tcc.evaluation.task import Task
+from config import CONFIG
+from evaluation.classification import fit_linear_models
+from evaluation.task import Task
 
 FLAGS = flags.FLAGS
 

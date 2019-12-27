@@ -77,7 +77,7 @@ def get_example(name, seq, seq_label=None, label_string=None,
 
   # Add context or video-level features.
   seq_len = len(seq['video'])
-  context_features_dict = {'name': bytes_feature([name]),
+  context_features_dict = {'name': bytes_feature([name.encode('utf-8')]),
                            'len': int64_feature([seq_len])}
 
   if seq_label is not None:
@@ -187,7 +187,7 @@ def merge_annotations(label, expected_n):
   """Merge annotations from label based on voting."""
   annotations = {}
 
-  for k in xrange(expected_n):
+  for k in range(expected_n):
     segments = np.vstack([label[person_id][str(k)] for person_id in label])
     annotations[k] = np.mean(segments, axis=0)
     # Convert from microseconds to seconds.
@@ -198,7 +198,7 @@ def merge_annotations(label, expected_n):
   start_sorted_keys = [sorted_keys[idx] for idx in start_sorted_idxes]
 
   # Add gaps.
-  for i in xrange(1, expected_n):
+  for i in range(1, expected_n):
     avg_time = 0.5 * (annotations[start_sorted_keys[i-1]][1] +
                       annotations[start_sorted_keys[i]][0])
     annotations[start_sorted_keys[i-1]][1] = avg_time

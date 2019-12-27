@@ -26,9 +26,9 @@ from absl import logging
 
 import tensorflow.compat.v2 as tf
 
-from tcc.config import CONFIG
-from tcc.dataset_splits import DATASETS
-from tcc.preprocessors import preprocess_sequence
+from config import CONFIG
+from dataset_splits import DATASETS
+from preprocessors import preprocess_sequence
 
 FLAGS = flags.FLAGS
 

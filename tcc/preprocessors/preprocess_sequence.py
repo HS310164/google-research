@@ -23,7 +23,7 @@ import random
 import enum
 
 import tensorflow.compat.v2 as tf
-from tcc.preprocessors import sequence_preprocessor
+from preprocessors import sequence_preprocessor
 
 
 class SequenceType(enum.Enum):

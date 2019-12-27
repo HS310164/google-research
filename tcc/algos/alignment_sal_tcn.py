@@ -21,10 +21,10 @@ from __future__ import print_function
 
 import tensorflow.compat.v2 as tf
 
-from tcc.algos.alignment import Alignment
-from tcc.algos.sal import SaL
-from tcc.algos.tcn import TCN
-from tcc.config import CONFIG
+from algos.alignment import Alignment
+from algos.sal import SaL
+from algos.tcn import TCN
+from config import CONFIG
 
 
 class AlignmentSaLTCN(TCN):
@@ -83,7 +83,7 @@ class AlignmentSaLTCN(TCN):
       steps_list = []
       seq_lens_list = []
 
-      for i in xrange(int(batch_size)):
+      for i in range(int(batch_size)):
         # Randomly sample half of TCN frames as in datasets.py we already
         # sample double the number of frames because it requires positives for
         # training.

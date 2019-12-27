@@ -24,10 +24,10 @@ from absl import flags
 from absl import logging
 
 import tensorflow.compat.v2 as tf
-from tcc.config import CONFIG
-from tcc.evaluation.task import Task
-from tcc.utils import get_data
-from tcc.utils import visualize_nearest_neighbours
+from config import CONFIG
+from evaluation.task import Task
+from utils import get_data
+from utils import visualize_nearest_neighbours
 
 FLAGS = flags.FLAGS
 

@@ -21,8 +21,8 @@ from __future__ import print_function
 
 import tensorflow.compat.v2 as tf
 
-from tcc.tcc.losses import classification_loss
-from tcc.tcc.losses import regression_loss
+from tcc.losses import classification_loss
+from tcc.losses import regression_loss
 
 
 def pairwise_l2_distance(embs1, embs2):

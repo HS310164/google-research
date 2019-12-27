@@ -22,10 +22,10 @@ from __future__ import print_function
 
 import tensorflow.compat.v2 as tf
 
-from tcc.algos.algorithm import Algorithm
-from tcc.config import CONFIG
-from tcc.models import Classifier
-from tcc.utils import random_choice_noreplace
+from algos.algorithm import Algorithm
+from config import CONFIG
+from models import Classifier
+from utils import random_choice_noreplace
 
 
 def randomly_reverse_indices(indices):

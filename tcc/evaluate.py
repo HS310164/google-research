@@ -26,16 +26,16 @@ from absl import flags
 
 import tensorflow.compat.v2 as tf
 
-from tcc.algorithms import get_algo
-from tcc.config import CONFIG
-from tcc.datasets import create_dataset
-from tcc.datasets import create_one_epoch_dataset
-from tcc.tasks import get_tasks
+from algorithms import get_algo
+from config import CONFIG
+from datasets import create_dataset
+from datasets import create_one_epoch_dataset
+from tasks import get_tasks
 
-from tcc.utils import get_embeddings_dataset
-from tcc.utils import get_lr_opt_global_step
-from tcc.utils import restore_ckpt
-from tcc.utils import setup_eval_dir
+from utils import get_embeddings_dataset
+from utils import get_lr_opt_global_step
+from utils import restore_ckpt
+from utils import setup_eval_dir
 
 
 layers = tf.keras.layers

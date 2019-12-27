@@ -97,7 +97,7 @@ def visualize_tfrecords(path_to_tfrecord, num_vids, num_skip_frames):
                  batch_labels[0])
     plt.show()
     plt.title(os.path.splitext(os.path.basename(tfrecord_files[ctr]))[0])
-    for frame_idx in xrange(0, len(batch_videos[0]), num_skip_frames):
+    for frame_idx in range(0, len(batch_videos[0]), num_skip_frames):
       plt.imshow(batch_videos[0, frame_idx])
       plt.pause(0.1)
     plt.close()

@@ -28,9 +28,9 @@ from scipy.spatial.distance import cdist
 from scipy.stats import kendalltau
 import tensorflow.compat.v2 as tf
 
-from tcc.config import CONFIG
-from tcc.evaluation.task import Task
-from tcc.utils import softmax
+from config import CONFIG
+from evaluation.task import Task
+from utils import softmax
 
 FLAGS = flags.FLAGS
 
